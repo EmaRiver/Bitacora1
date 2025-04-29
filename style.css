@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+body {
+    background: rgb(255,170,0);
+    background: linear-gradient(60deg, rgba(255,170,0,1) 0%, rgba(170,105,0,1) 31%, rgba(102,87,44,1) 100%); 
+font-family: "Montserrat", serif;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(42, 36, 36, 0.8);
+    border: 3px solid #f09606;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #fbad31;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    background: black;
+    padding: 10px;
+}
+.navbar a {
+    color: #ffaa00;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    text-shadow: 0 0 10px #f4bf6b;
+}
+.navbar a:hover {
+    text-shadow: 0 1 5px #553218;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #fa9a00;
+}
+p {
+    font-size: 1.2em;
+}
+.imagencentrada {
+    display: block;
+    margin: auto;
+}
+#container1 {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    background: rgba(102, 81, 44, 0.8);
+    border: 4px solid #eaa929;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #493c27;
+}
+.cuadrado {
+    width: 500px;
+    height: 900px;
+    margin: auto;
+    background: linear-gradient(90deg, #fbff25 0%, #ffb400 80%);
+    padding: 2px;
+    border: 30px solid saddlebrown;
+}
+.imagendefondo {
+    height: 500px;
+    background-image: url('https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.uno{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    left:300px;   
+    z-index: -1;         
+
+}
+.dos{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(214, 148, 26);
+    position: absolute;
+    top: 0px;
+    left:300px;   
+    z-index: -1; 
+}
+.tres{  
+     width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left:300px;   
+    z-index: 1;
+}
+.un{
+    width: 200px;
+    height: 200px;
+    background-color: #fbff25;
+    animation: escalar 2s infinite;/*Nombre de la animacion ,tiempo , loop*/
+
+}
+#slideshow {
+    text-align: center;
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin-bottom: 400px;
+  }
+   
+  .slide-wrapper {
+    width: 2912px;
+    animation: slide 18s ease infinite;
+  }
+   
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+   
+  .slide:nth-child(1) { /*Elementos de una etiqueta que estan dentro*/
+    background-color: rgb(216, 41, 243);
+  }
+   
+  .slide:nth-child(2) {
+    background-color: coral;
+  }
+   
+  .slide:nth-child(3) {
+    background-color: greenyellow;
+  }
+   
+  .slide:nth-child(4) {
+    background-color: brown;
+  }
+   
+  @keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;}
+    70% {margin-left: -1456px;}
+    80% {margin-left: -2184px;}
+    90% {margin-left: -2184px;}
+  }
+  .uni {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffaa00;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px #f4bf6b;
+}
+/*resalta las letritas*/
+.uni span {
+  display: block;
+  color: #ffcc66;
+  font-family: 'Courier New', monospace;
+  white-space: pre-line;}
+
+/* Selector de relación descendiente */
+.uni ul li {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Pseudo-clase :first-child */
+.uni p:first-child {
+    color: #ffb347;
+    font-style: italic;
+}
+
+/* Selector de atributo para input */
+.unidad1 input[type="text"],
+.unidad1 input[type="email"] {
+    padding: 10px;
+    margin: 10px 5px;
+    border: 2px solid #ffaa00;
+    border-radius: 6px;
+    background-color: #fffaf0;
+}
+
+/* Pseudo-clase :focus */
+.unidad1 input:focus {
+    border-color: #ff9100;
+    outline: none;
+    background-color: #fff4e1;
+}
+
+/* Estilo base para botón */
+.unidad1 .boton-demo {
+    padding: 10px 20px;
+    background-color: #ffaa00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Pseudo-clase :hover */
+.unidad1 .boton-demo:hover {
+    background-color: #ff7b00;
+    box-shadow: 0 0 10px #ffae42;
+}
+.dis{
+    width: 80px;
+    height: 80px;
+    background-color: #ff9d00;
+    margin: 10px;
+    display: inline-block;
+}
+.btn{
+    background-color: blanchedalmond;
+    color: white;
+    padding: 10px;
+    transition: blackground-color 0.3s;}
+    .btn:hover{
+        background-color: #fbff25;
+    }
